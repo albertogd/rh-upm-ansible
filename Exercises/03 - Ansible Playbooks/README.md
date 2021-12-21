@@ -21,9 +21,7 @@ Playbooks are designed to be human-readable and are developed in a basic text la
 ---
 **NOTE**
 
-If you receive an error "Invalid callback for stdout specified: yaml", install the collection community.general:
-
-$ ansible-galaxy collection install community.general
+If you receive an error "Invalid callback for stdout specified: yaml", install the collection community.general: ansible-galaxy collection install community.general
 ---
 
 Before running your playbook, run the ansible-playbook --syntax-check  command to verify that its syntax is correct.
