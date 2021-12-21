@@ -4,29 +4,26 @@ AdHoc command allows execute a single Ansible task in a programmatic and simple 
 
 An ad hoc command looks like this:
 
-[source,bash]
-----
+```
 $ ansible [pattern] -m [module] -a "[module options]"
-----
+```
 
 ## Examples
 
 ### Managing services
 Ensure a service is started on all webservers:
 
-[source,bash]
-----
+```
 $ ansible webservers -m ansible.builtin.service -a "name=httpd state=started"
-----
+```
 
 
 ### Managing files
 The ansible.builtin.file module allows changing ownership and permissions on files.
 
-[source,bash]
-----
+```
 $ ansible webservers -m ansible.builtin.file -a "dest=/srv/foo/b.txt mode=600 owner=mdehaan group=mdehaan"
-----
+```
 
 ## Exercise 
 
