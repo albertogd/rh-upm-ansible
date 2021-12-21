@@ -12,7 +12,7 @@ Playbooks are designed to be human-readable and are developed in a basic text la
 
 -   Use the inventory created in Lab **02 - Ansible Inventory**
 -   Create a playbook named backend_config.yml with the following options:
-    -   The play must be executed on **fronteds** hosts
+    -   The play must be executed on **frontends** hosts
     -   Print facts
     -   Create a new user "yourname"
     -   Install package "httpd"
