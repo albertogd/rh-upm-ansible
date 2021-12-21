@@ -10,7 +10,7 @@ $ ansible [pattern] -m [module] -a "[module options]"
 
 ## Examples
 
-### Managing services
+### Managing services
 Ensure a service is started on all webservers:
 
 ```
@@ -30,9 +30,9 @@ $ ansible webservers -m ansible.builtin.file -a "dest=/srv/foo/b.txt mode=600 ow
 - Execute different Ansible Ad-Hoc Commands in order to achieve the following objectives:
     * Print "It is working" message on localhost
     * Print instance settings on localhost
-    * Create a new user "yourname" on localhost using become (root)
-    * Include the new user "yourname" on **wheel** group on localhost using become (root)
-    * Copy sudo file **/etc/passwd** on localhost using become "yourname" and setting permissions 440 and owner root in **/tmp/newfile**
+    * Create a new user "yourname" on localhost
+    * Include the new user "yourname" on **mail** group on localhost
+    * Copy file **/etc/protocols** on localhost and setting permissions 440 and owner root in **/tmp/<yourname>**
 
 ## Useful Links
 
