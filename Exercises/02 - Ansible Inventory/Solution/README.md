@@ -7,5 +7,5 @@ $ ansible-inventory -i inventory --grap
 -  Print the vars of **frontends** group
 
 ```
-$ ansible-inventory -i inventory --host frontends
+$ ansible-inventory -i inventory --graph frontends --vars
 ```
