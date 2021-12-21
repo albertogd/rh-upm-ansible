@@ -15,7 +15,7 @@ Create an Ansible inventory file named "inventory" with the following requisites
 -   Define an ansible var **http_port** with the value **80** for **frontends** group
 -   Define an ansible var **db_port** with the value **3306** for **backends** group
 -   Check inventory file structure is correct and graphs it
--   Print the var **http_port** for **frontends** group
+-   Print the vars of **frontends** group
 
 ## Useful Links
 
