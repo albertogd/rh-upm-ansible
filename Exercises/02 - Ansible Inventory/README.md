@@ -8,7 +8,7 @@ The default location for inventory is a file called /etc/ansible/hosts. You can 
 
 Create an Ansible inventory file named "inventory" with the following requisites:
 
--   A group named **webservers** with 2 subgroups **frontend** and **backends**
+-   A group named **webservers** with 2 subgroups **frontends** and **backends**
 -   **node1** belongs to **frontends** group
 -   **node2** and **node3** belongs to **backends** group
 -   Define an ansible var **app_version** with the value **1.0** for **webservers** group 
