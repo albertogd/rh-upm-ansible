@@ -1,2 +1,2 @@
-# rh-upm-ansible
-Ansible Automation Workhop - UPM
+# Ansible Automation Workhop - UPM
+
