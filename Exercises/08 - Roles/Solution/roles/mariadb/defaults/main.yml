@@ -1,0 +1,7 @@
+---
+# defaults file for roles/mariadb
+
+mysql_users: 
+  - test01
+
+mysql_database: testroles01

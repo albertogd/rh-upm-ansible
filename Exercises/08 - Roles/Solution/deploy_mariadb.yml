@@ -1,0 +1,9 @@
+---
+- name: Install and configure MariaDB
+  hosts: backends
+  become: true
+
+  roles:
+    - role: mariadb
+      vars:
+        mysql_users: ["test01","test02","test03"] 

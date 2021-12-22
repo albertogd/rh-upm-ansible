@@ -1,0 +1,23 @@
+---
+# tasks file for mariadb
+
+- name: Install mariadb package
+  package:
+    name: mariadb-server
+    state: latest
+
+- name: Start and enable mariadb service
+  service:
+    name: mariadb
+    state: started
+    enabled: yes
+
+- name: Create database
+  mysql_db:
+    name: "{{ mysql_database }}"
+
+- name: Create users
+  include_tasks: create_mariadb_user.yml
+  loop: "{{ mysql_users }}"
+  loop_control: 
+    loop_var: user
