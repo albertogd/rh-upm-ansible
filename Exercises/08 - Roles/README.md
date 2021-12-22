@@ -18,6 +18,7 @@ An Ansible role has a defined directory structure with eight main standard direc
 ## Exercise
 
 - Use the inventory created in Exercise 2 (if you don't have it, you can copy from Solution)
+- Install the collections community.general and community.mysql with ansible-galaxy
 -   Create a custom role named "mariadb" which has to implement the following tasks:
     -   Install mariadb-server and python3-PyMySQL packages
     -   Start and enable mysqld service
