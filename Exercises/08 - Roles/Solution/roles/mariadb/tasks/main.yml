@@ -3,7 +3,9 @@
 
 - name: Install mariadb package
   package:
-    name: mariadb-server
+    name:
+      - mariadb-server
+      - python3-PyMySQL
     state: latest
 
 - name: Start and enable mariadb service

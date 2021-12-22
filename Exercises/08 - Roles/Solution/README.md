@@ -7,11 +7,21 @@
 $ ansible-galaxy init roles/mariadb
 ```
 
+## Install the collections
+
+- name: community.general
+- name: community.mysql
+
+```
+$ ansible-galaxy collection install community.general
+$ ansible-galaxy collection install community.mysql
+```
+
 ## Run playbook
 
 
 ```
-$ ansible-playbook deploy_mariadb.yml
+$ ansible-playbook -i inventory deploy_mariadb.yml
 ```
 
 ##   Test Database
@@ -20,9 +30,7 @@ $ ansible-playbook deploy_mariadb.yml
 ```
 $ ssh node2
 $ sudo -i
-$ mysql -u root -p
+$ mysql -u root
 MariaDB [(none)]> $ show databases;
-MariaDB [(none)]> $ show grants for 'test01'@'xxx';
-MariaDB [(none)]> $ show grants for 'test02'@'xxx';
-MariaDB [(none)]> $ show grants for 'test03'@'xxx';
+MariaDB [(none)]> $ SELECT Host,User FROM mysql.user;
 ```

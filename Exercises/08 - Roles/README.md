@@ -19,7 +19,7 @@ An Ansible role has a defined directory structure with eight main standard direc
 
 - Use the inventory created in Exercise 2 (if you don't have it, you can copy from Solution)
 -   Create a custom role named "mariadb" which has to implement the following tasks:
-    -   Install mariadb-server package
+    -   Install mariadb-server and python3-PyMySQL packages
     -   Start and enable mysqld service
     -   Create a database defined in "mysql_database" (* "testroles01" by default)
     -   Include a tasks file named "create_mariadb_user.yml" located in tasks folder. It is necessary to import this task file as many times as the number of users defined in an array variable named "mysql_users" (* At least "test01" by default) using a loop. Rename the loop var using loop controls. Regarding this tasks file, it has to perform the following tasks:
